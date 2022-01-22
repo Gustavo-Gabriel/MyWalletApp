@@ -1,3 +1,3 @@
 # Changelog
 
-All notable changes to CountdownApp should be document in this file
+All notable changes to MyWalletApp should be document in this file

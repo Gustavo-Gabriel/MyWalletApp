@@ -17,6 +17,7 @@
 		F1CE364A279C935E009D3C8B /* MyWalletAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CE3649279C935E009D3C8B /* MyWalletAppUITests.swift */; };
 		F1CE364C279C935E009D3C8B /* MyWalletAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CE364B279C935E009D3C8B /* MyWalletAppUITestsLaunchTests.swift */; };
 		F1CE3659279C938B009D3C8B /* changelog.md in Resources */ = {isa = PBXBuildFile; fileRef = F1CE3658279C938B009D3C8B /* changelog.md */; };
+		F1CE365C279C9571009D3C8B /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = F1CE365B279C9571009D3C8B /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1CE365C279C9571009D3C8B /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,6 +148,9 @@
 			dependencies = (
 			);
 			name = MyWalletApp;
+			packageProductDependencies = (
+				F1CE365B279C9571009D3C8B /* SnapKit */,
+			);
 			productName = MyWalletApp;
 			productReference = F1CE3625279C9357009D3C8B /* MyWalletApp.app */;
 			productType = "com.apple.product-type.application";
@@ -218,6 +223,9 @@
 				Base,
 			);
 			mainGroup = F1CE361C279C9357009D3C8B;
+			packageReferences = (
+				F1CE365A279C9571009D3C8B /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = F1CE3626279C9357009D3C8B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -626,6 +634,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F1CE365A279C9571009D3C8B /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F1CE365B279C9571009D3C8B /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F1CE365A279C9571009D3C8B /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F1CE361D279C9357009D3C8B /* Project object */;
 }

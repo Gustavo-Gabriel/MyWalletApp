@@ -1,17 +1,11 @@
-//
-//  ViewController.swift
-//  MyWalletApp
-//
-//  Created by Gustavo Anjos on 22/01/22.
-//
-
 import UIKit
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        view.backgroundColor = .red
     }
 
 

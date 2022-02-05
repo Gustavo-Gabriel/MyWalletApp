@@ -17,8 +17,6 @@
 		F1CE364C279C935E009D3C8B /* MyWalletAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CE364B279C935E009D3C8B /* MyWalletAppUITestsLaunchTests.swift */; };
 		F1CE3659279C938B009D3C8B /* changelog.md in Resources */ = {isa = PBXBuildFile; fileRef = F1CE3658279C938B009D3C8B /* changelog.md */; };
 		F1CE365C279C9571009D3C8B /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = F1CE365B279C9571009D3C8B /* SnapKit */; };
-		F1CE365F279FA304009D3C8B /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = F1CE365E279FA304009D3C8B /* Realm */; };
-		F1CE3661279FA304009D3C8B /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F1CE3660279FA304009D3C8B /* RealmSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,8 +57,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1CE3661279FA304009D3C8B /* RealmSwift in Frameworks */,
-				F1CE365F279FA304009D3C8B /* Realm in Frameworks */,
 				F1CE365C279C9571009D3C8B /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -151,8 +147,6 @@
 			name = MyWalletApp;
 			packageProductDependencies = (
 				F1CE365B279C9571009D3C8B /* SnapKit */,
-				F1CE365E279FA304009D3C8B /* Realm */,
-				F1CE3660279FA304009D3C8B /* RealmSwift */,
 			);
 			productName = MyWalletApp;
 			productReference = F1CE3625279C9357009D3C8B /* MyWalletApp.app */;
@@ -228,7 +222,6 @@
 			mainGroup = F1CE361C279C9357009D3C8B;
 			packageReferences = (
 				F1CE365A279C9571009D3C8B /* XCRemoteSwiftPackageReference "SnapKit" */,
-				F1CE365D279FA304009D3C8B /* XCRemoteSwiftPackageReference "realm-swift" */,
 			);
 			productRefGroup = F1CE3626279C9357009D3C8B /* Products */;
 			projectDirPath = "";
@@ -639,14 +632,6 @@
 				minimumVersion = 5.0.1;
 			};
 		};
-		F1CE365D279FA304009D3C8B /* XCRemoteSwiftPackageReference "realm-swift" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/realm/realm-swift.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 10.19.0;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -654,16 +639,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F1CE365A279C9571009D3C8B /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
-		};
-		F1CE365E279FA304009D3C8B /* Realm */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F1CE365D279FA304009D3C8B /* XCRemoteSwiftPackageReference "realm-swift" */;
-			productName = Realm;
-		};
-		F1CE3660279FA304009D3C8B /* RealmSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F1CE365D279FA304009D3C8B /* XCRemoteSwiftPackageReference "realm-swift" */;
-			productName = RealmSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
